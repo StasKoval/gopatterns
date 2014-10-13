@@ -7,15 +7,15 @@ import (
 type Creator1 struct{
 }
 
-func (c Creator1) NewProduct() AbstractProduct {
-    return ProductA1{}
+func (c *Creator1) NewProduct() AbstractProduct {
+    return &ProductA1{}
 }
 
 type Creator2 struct{
 }
 
-func (c Creator2) NewProduct() AbstractProduct {
-    return ProductA2{}
+func (c *Creator2) NewProduct() AbstractProduct {
+    return &ProductA2{}
 }
 
 func TestFactoryMethod(t *testing.T) {
