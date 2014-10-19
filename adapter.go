@@ -14,6 +14,6 @@ type Adapter struct{
     Impl Adaptee
 }
 
-func (a *Adapter) MethodA9() {
+func (a *Adapter) MethodA() {
     a.Impl.MethodB()
 }
